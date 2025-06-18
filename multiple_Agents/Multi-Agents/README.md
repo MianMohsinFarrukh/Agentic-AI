@@ -13,13 +13,13 @@ api Link = https://aistudio.google.com/
 4- uv run explore-uv        uv.lock file create .
 
 
-8- .env                     create .env file for api .
-9- GEMINI_API_KEY=your api key  //set .env file 
+5- .env                     create .env file for api .
+6- GEMINI_API_KEY=your api key  //set .env file 
 
 
 
                    ****************** FOR AGENTS 
-10- uv add openai-agents
+7- uv add openai-agents
 
 
 

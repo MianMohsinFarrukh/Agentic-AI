@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from agents import AsyncOpenAI, OpenAIChatCompletionsModel, Agent, Runner
 from agents.run import RunConfig
 
+
 # Load the environment variables
 load_dotenv()
 gemini_api_key = os.getenv("GEMINI_API_KEY")
@@ -29,19 +30,22 @@ config = RunConfig(
 backend_agent = Agent(
     name="Backend Expert",
     handoff_description="Specialist agent for Backend Development",
-    instructions="You are a backend development expert. Help users with backend topics."
+    instructions="You are a backend development expert. Help users with backend topics.",
+    model=model
 )
 
 frontend_agent = Agent(
     name="Frontend Expert",
     handoff_description="Specialist agent for frontend Development",
-    instructions="You are a frontend expert. Help users with frontend topics."
+    instructions="You are a frontend expert. Help users with frontend topics.",
+    model=model
 )
 
 web_dev_agent = Agent(
     name="Web Developer Agent",
-    instructions="Route the question to the appropriate agent.",
-    handoffs=[frontend_agent, backend_agent]
+    handoffs=[frontend_agent, backend_agent],
+    instructions="Route the question to the appropriate agent.", 
+    model=model
 )
 
 user_question = input("Enter your question: ")
