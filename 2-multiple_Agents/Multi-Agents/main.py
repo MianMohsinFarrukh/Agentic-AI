@@ -54,6 +54,7 @@ user_question = input("Enter your question: ")
 try:
     result = Runner.run_sync(web_dev_agent, user_question, run_config=config)
     print("Result:", result.final_output)
+    #print("agent response:", result.last_agent.name)
 except Exception as e:
     print("Error:", e)
 
