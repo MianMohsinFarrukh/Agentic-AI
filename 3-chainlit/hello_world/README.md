@@ -16,11 +16,11 @@ api Link = https://aistudio.google.com/
                ****************** FOR CHAINLIT   ******************
 
 5-   // installation Chainlit .
-        *** uv add chainlit          
+        ****************** uv add chainlit          
 6-  // for cheking chainlit .
-        *** uv run chainlit hello    
+        ****************** uv run chainlit hello    
 7-  // open main file :
-        *** uv run chainlit run chatbot.py -w
+        ****************** uv run chainlit run chatbot.py -w
 
 
 DECORATORS:
