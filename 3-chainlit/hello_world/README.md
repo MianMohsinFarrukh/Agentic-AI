@@ -17,7 +17,7 @@ api Link = https://aistudio.google.com/
 
 5-   // installation Chainlit :
 
-               ****************** uv add chainlit  ******************    
+                               uv add chainlit    
 
 6-  // for cheking chainlit :
 
