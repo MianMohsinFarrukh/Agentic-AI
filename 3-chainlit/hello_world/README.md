@@ -50,8 +50,6 @@ DECORATORS:
 
 
 
-
-
 8- .env                     create .env file for api .
 9- GEMINI_API_KEY=your api key  //set .env file 
 
